@@ -18,7 +18,7 @@
 					}
 			</style>
 			<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/style.css">
 
 			<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
@@ -26,11 +26,14 @@
 		<!--[if lt IE 7]>
 				<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
-
-		<div class="top-greybar"></div>
-		<header>
+		<div class="wrapper">
+		<header id="page-header">
+			<div class="container-fluid">
+				<div class="topbar greybar"><div class="container"><h2 class="nomprenom">Ahmad BEDJA BOANA</h2></div></div>
+				<div class="topbar"><div class="container"><h2 class="profession pull-right">Etudiant en Informatique</h2></div></div>
+			</div>
+			<div class="con">
 			<div class="navbar" role="navigation">
-				<div class="container wrapper">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 							<span class="sr-only">Toggle navigation</span>
@@ -38,80 +41,143 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<div id="logo">
-							<a href="#"><img style="width:42px;height:40px;" src="img/logo-abba.png" alt="Ahmad BEDJA"></a>
-						</div>
 					</div>
-					<div class="navbar-collapse nav-main pull-right">
-						<ul class="list-unstyled">	<!-- <ul class="nav navbar-nav navbar-right"> -->
-							<li class="active"><a href="/sf2/web/app_dev.php/">Accueil</a></li>
-							<li class=""><a href="/sf2/web/app_dev.php/newArticle">Projets</a></li>
+					<div class="navbar-collapse nav-main">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#accueil">Accueil</a></li>
+							<li><a href="#contact">Parcours</a></li>
+							<li><a href="#contact">Compétences</a></li>
+							<li><a href="#contact">Projets</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>
-				</div>
+			</div>
 			</div>
 		</header>
 
-		<div class="page-title">
-			<div class="container wrapper">
-				<h3 class="pull-left"><strong>Portfolio</strong></h3>
-				<!-- <ol class="breadcrumb pull-right">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Library</a></li>
-					<li class="active">Data</li>
-				</ol> -->
+		
+
+		<div class="container-fluid section" id="apropos">
+			<div class="row ">
+				<div class="col-md-6 col-md-offset-3">
+					<h2 class="text-center section-titre">À mon propos</h2>
+					<p class="text-justify">Je suis tout d'abord un de Censorius Cato monstravit. qui interrogatus quam ob rem inter multos... statuam non haberet malo inquit ambigere bonos quam ob rem id non meruerim, quam quod est gravius cur inpetraverim mussitare.
+Iis igitur est difficilius satis facere, qui se Latina scripta dicunt contemnere. in quibus hoc primum est in quo admirer, cur in gravissimis rebus non delectet eos sermo patrius, cum idem fabellas Latinas</p>
+				</div>
 			</div>
 		</div>
 
-		<div class="container main">
-			<div class="wrapper">
-				<div class="filtre">
-					<ul class="list-unstyled">
-						<li><a data-filter="*" class="active">Tout</a></li>
-						<li><a data-filter=".metal">PHP</a></li>
-						<li><a data-filter=".transition">JAVA</a></li>
-					</ul>
-				</div>
+		<div class="container-fluid section"  id="parcours">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h2 class="text-center section-titre">Parcours</h2>
 
-				<div id="projects-grid">
-					<div class="iso-item php">
-						<div class="project-thumb">
-							<a href="#">
-								
+					<div class="row frise">
+						<div class="col-md-3 ">
+							<div class="frise-item">
+								<div class="frise-item-content">Bac Scientifique <span class="frise-item-lieu">Lycée Albert Camus</span></div>
+							</div>
+						</div>
+						<div class="col-md-3 ">
+							<div class="frise-item">
+								<div class="frise-item-content">DUT Informatique<span class="frise-item-lieu">IUT de Montpellier</span></div>
+							</div>
+						</div>
+						<div class="col-md-3 ">
+							<div class="frise-item">
+								<div class="frise-item-content">Licence Informatique<span class="frise-item-lieu">Université de Montpellier 2</span></div>
+							</div>
+						</div>
+						<div class="col-md-3 ">
+							<div class="frise-item">
+								<div class="frise-item-content">Master AIGLE<span class="frise-item-lieu">Université de Montpellier 2</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<p class="text-justify">Très intéressé par le fonctionnement du monde qui nous entoure, je me suis naturellement tourné vers un Baccalauréat scientifique. Ne souhaitant pas en faire mon métier je me suis tourné vers l'informatique en pensant pouvoir mieux comprendre cet outils qui m'intéressait déjà. La formation menant au DUT m'as permis de découvrir un univers passionnant qui permet de créer des outils qui facilitent la vie de tous. Mon Master en ingéniérie logicielle viens completer ma formation universiatire pour que je puisse m'appliquer à concevoir des applicatoins de plus en plus ambitieuses.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid section"  id="competences">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h2 class="text-center section-titre">Compétences</h2>
+
+					<div class="row">
+						<div class="col-md-3 ">
+							<div class="comp-item">
+								<div class="comp-item-content java">JAVA</div>
+							</div>
+						</div>
+						<div class="col-md-3 ">
+							<div class="comp-item">
+								<div class="comp-item-content">Symfony 2</div>
+							</div>
+						</div>
+						<div class="col-md-3 ">
+							<div class="comp-item">
+								<div class="comp-item-content">NodeJS</div>
+							</div>
+						</div>
+						<div class="col-md-3 ">
+							<div class="comp-item">
+								<div class="comp-item-content">Bootstrap</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+
+						<p class="text-justify">Mes différents projets de Censorius Cato monstravit. qui interrogatus quam ob rem inter multos... statuam non haberet malo inquit ambigere bonos quam ob rem id non meruerim, quam quod est gravius cur inpetraverim mussitare.Iis igitur est difficilius satis facere, qui se Latina scripta dicunt contemnere. in quibus hoc primum est in quo admirer, cur in gravissimis rebus non delectet eos sermo patrius, cum idem fabellas Latinas</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid section" id="projets">
+			<div class="row row-projets">
+				<div class="col-md-8 col-md-offset-2">
+					<h2 class="text-center section-titre">Projets</h2>
+					<div class="row">
+						<div class="col-md-3 ">
+							<a href="http://friendly-remindr.appspot.com">
+							<div class="projet-item">
+								<div class="projet-item-content">Il était une fois, un langage exotique <br> Golang</div>
+							</div>
+							</a>
+						</div>
+						<div class="col-md-3 ">
+							<a href="http://pierremalmassari.fr/themeynbook/">
+							<div class="projet-item">
+								<div class="projet-item-content">Un réseau social pour nous lier <br> Meynbook</div>
+							</div>
+							</a>
+						</div>
+						<div class="col-md-3 ">
+							<div class="projet-item">
+								<div class="projet-item-content">API REST avec NodeJS  <br>Citations</div>
+							</div>
+						</div>
+						<div class="col-md-3 ">
+							<a href="http://grammarware.github.io/sattose/slides/HuchardABCCFLNPSV.pdf">
+							<div class="projet-item">
+								<div class="projet-item-content">Rénovation logicielle grace aux algorithmes métaheuristique</div>
+							</div>
 							</a>
 						</div>
 					</div>
-
-					<div class="iso-item php">...</div>
-					<div class="iso-item java">...</div>
-					<div class="iso-item java">...</div> 
 				</div>
-				<!-- Example row of columns -->
-				<div class="row">
-					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-					</div>
-					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-				 </div>
-					<div class="col-md-4">
-						<h2>Heading</h2>
-						<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-						<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-					</div>
-				</div>
-
-				<hr>
 			</div>
-			<footer>
-				<p>&copy; Company 2014</p>
-			</footer>
-		</div> <!-- /container -->
+		</div>
+		<div class="push"></div>
+		</div>
+		<footer id="footer">
+			<div class="text-right credit">
+			<p>design and code - Ahmad BEDJA BOANA.&nbsp;&nbsp;© 2014</p>
+			</div>
+		</footer>	
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
