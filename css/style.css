@@ -3,15 +3,18 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html, body {
-height: 100%;
+body {position: relative;}
+
+html, body,#wrapper
+{
+	height: 100%;
 }
 
-.wrapper {
+#wrapper {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -58px;
+	margin: auto 0 -58px;
 }
 
 body
@@ -26,7 +29,6 @@ a:hover { text-decoration: none;}
 
 a, .projet-item
 {
-	text-shadow:none;
 
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
@@ -79,12 +81,13 @@ a, .projet-item
 	color: #5BA5AF;
 }
 
-.con
+/*.con
 {
 	position: relative;
 	height: 58px;
 	background:#5ba5af;
-}
+}*/
+
 
 header .navbar
 {
@@ -94,31 +97,45 @@ header .navbar
 	height: 58px;
 	border-radius: 0px;
 	font-weight: 700;
+
+	border-width: 0;
+	background-image: none;
+	box-shadow: none;
+}
+
+.navbar-default .navbar-nav>.active>a 
+{
+	background-image: none;
+	background-color: #fff;
+	box-shadow: none;
 }
 
 
-
 @media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
 
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+	.navbar .navbar-collapse {
+		text-align: center;
+	}
 }
 
 .nav-main .nav 
 {
 	margin: 0;
+	background-color: #fff;
 }
 
 .nav-main li
 {
 	text-transform: uppercase;
 	display: inline-block;
+	width: 160px;
+	background-color: #fff;
+
 }
 
 .nav-main li a
@@ -127,15 +144,27 @@ header .navbar
 	padding: 0 16px;
 	line-height: 3.5em;
 
-}
+	height: 58px;
+	background-image: none;
+	box-shadow: none;
+	background-color: #5ba5af;
 
+}
 
 .nav>li>a:hover, .nav>li>a:focus, .nav>li.active>a
 {
 	color: #393939;
-	background:0;
+	background-image:none;
+ 	transform: perspective( 600px ) ;
 }
 
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
 .section
 {
 	padding:50px;
