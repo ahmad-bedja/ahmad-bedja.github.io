@@ -34,7 +34,7 @@ html, body,#wrapper
 a:hover { text-decoration: none;}
 
 
-a, .projet-item, .frise-item
+a, .projet-item, .frise-item,#apropos
 {
 
 	-webkit-transition: all .3s ease;
@@ -89,14 +89,6 @@ a, .projet-item, .frise-item
 	color: #5BA5AF;
 }
 
-/*.con
-{
-	position: relative;
-	height: 58px;
-	background:#5ba5af;
-}*/
-
-
 header .navbar
 {
 	margin-top: 40px;
@@ -111,18 +103,22 @@ header .navbar
 	box-shadow: none;
 }
 
-/*.navbar-default .navbar-nav>.active>a 
+header .navbar-collapse ul.navbar-nav
 {
-	background-image: none;
-	background-color: #fff;
-	box-shadow: none;
-}*/
+	margin: 0;
+}
+
+.navbar .navbar-toggle .icon-bar {
+	background-color: #eee;
+}
+.navbar .navbar-toggle  {
+	border-color: #ddd;
+	border-radius: 0;
+}
 
 
 .nav-main .nav 
 {
-	/*margin: 0;*/
-	/*background-color: #fff;*/
 	background-color: #5ba5af;
 }
 
@@ -130,10 +126,6 @@ header .navbar
 {
 	text-transform: uppercase;
 	display: inline-block;
-
-	/*width: 160px;*/
-	/*background-color: #fff;*/
-
 }
 
 .nav-main li a
@@ -141,12 +133,9 @@ header .navbar
 	color: #fff;
 	padding: 0 16px;
 	line-height: 3.5em;
-
 	height: 58px;
 	background-image: none;
 	box-shadow: none;
-	/*background-color: #5ba5af;*/
-
 }
 
 .navbar-default .nav>li>a:hover,.navbar-default  .nav>li>a:focus,.navbar-default  .nav>li.active>a
