@@ -185,6 +185,8 @@ header .navbar
 	.navbar .navbar-header{
 		margin-right: 0;
 	}
+
+
 }
 
 
@@ -334,10 +336,32 @@ header .navbar
 	vertical-align: middle;
 }
 
+
+.projet-item
+{
+	-webkit-transition:.2s ease-in-out;
+    transition:.2s ease-in-out;
+
+	border: 8px dotted rgba(91, 165, 175, 1);
+
+}
+
 .projet-item:hover
 {
-	height:200px;
+	
+	border-width:0px;
+    
+	
 }
+
+@media screen and (min-width: 768px){
+
+	.projet-item:hover
+	{
+		/*height:200px;*/
+	}
+}
+
 
 #footer{
 	height: 60px;
