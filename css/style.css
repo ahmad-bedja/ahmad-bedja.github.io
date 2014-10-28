@@ -226,55 +226,6 @@ header .navbar
 	margin-top: 50px;
 }
 
-@media screen and (min-width: 768px){
-	.frise:after{
-		content: "";
-		display: block;
-		width: 100%;
-		background: transparent url(../img/tiret.gif) repeat-x top left;
-		height: 1px;
-		position: absolute;
-		top:11.5em;
-		z-index: 0;
-
-	}
-}
-
-@media (max-width: 768px){
-	
-	/*Vraiment falloir que je passe ce code en sass*/
-	.frise-item
-	{
-		border:1px solid;
-		position: relative;
-	}
-
-	.col-frise:nth-child(1) .frise-item
-	{
-		z-index: 1;
-		top: 21em;
-	}
-	.col-frise:nth-child(2) .frise-item
-	{
-		z-index: 2;
-		top:3em;
-
-	}
-	.col-frise:nth-child(3) .frise-item
-	{
-		z-index: 3;
-		top:-16em;
-
-	}
-	.col-frise:nth-child(4) .frise-item
-	{
-		z-index: 4;
-		top:-34em;
-
-	}
-
-}
-
 
 .frise-item, .comp-item, .projet-item
 {
@@ -354,12 +305,63 @@ header .navbar
 	
 }
 
-@media screen and (min-width: 768px){
 
-	.projet-item:hover
-	{
-		/*height:200px;*/
+
+
+@media screen and (min-width: 768px){
+	.frise:after{
+		content: "";
+		display: block;
+		width: 100%;
+		background: transparent url(../img/tiret.gif) repeat-x top left;
+		height: 1px;
+		position: absolute;
+		top:11.5em;
+		z-index: 0;
+
 	}
+}
+
+@media (max-width: 768px){
+	
+	/*Vraiment falloir que je passe ce code en sass*/
+	.frise-item
+	{
+		border:1px solid;
+		position: relative;
+	}
+
+	.col-frise:nth-child(1) .frise-item
+	{
+		z-index: 1;
+		top: 21em;
+	}
+	.col-frise:nth-child(2) .frise-item
+	{
+		z-index: 2;
+		top:3em;
+
+	}
+	.col-frise:nth-child(3) .frise-item
+	{
+		z-index: 3;
+		top:-16em;
+
+	}
+	.col-frise:nth-child(4) .frise-item
+	{
+		z-index: 4;
+		top:-34em;
+
+	}
+
+
+
+	.comp-item, .projet-item
+	{
+		height: auto;
+	}
+
 }
 
 
