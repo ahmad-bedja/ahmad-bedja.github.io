@@ -3,31 +3,38 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body {position: relative;}
+/*body {position: relative;}*/
 
-html, body,#wrapper
+html
 {
-	height: 100%;
+	position: relative;
+	min-height: 100%;
 }
 
-#wrapper {
+body
+{
+	margin-bottom: 60px;
+	font-size: 1.6em;
+
+	/*background-color: #5ba5af;*/
+}
+html, body,#wrapper
+{
+	/*height: 100%;*/
+}
+
+/*#wrapper {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
 	margin: auto 0 -58px;
 }
-
-body
-{
-	font-size: 1.6em;
-	/*background-color: red;*/
-}
-
+*/
 * { text-shadow: none !important; }
 a:hover { text-decoration: none;}
 
 
-a, .projet-item
+a, .projet-item, .frise-item
 {
 
 	-webkit-transition: all .3s ease;
@@ -37,11 +44,11 @@ a, .projet-item
 	transition: all .3s ease;
 }
 
-#page-header
+/*#page-header, #page-header>.container-fluid,#page-header .navbar
 {
-	/*margin-bottom: 40px;*/
+	background-color: #fff;
 }
-
+*/
 .container-fluid {
     padding: 0px;
 }
@@ -72,7 +79,8 @@ a, .projet-item
 
 .topbar h2
 {
-	margin: 20px auto;
+	margin: 0 ;
+	padding: 20px 30px;
 	font-family: "Segoe UI";
 }
 
@@ -103,8 +111,47 @@ header .navbar
 	box-shadow: none;
 }
 
-.navbar-default .navbar-nav>.active>a 
+/*.navbar-default .navbar-nav>.active>a 
 {
+	background-image: none;
+	background-color: #fff;
+	box-shadow: none;
+}*/
+
+
+.nav-main .nav 
+{
+	/*margin: 0;*/
+	/*background-color: #fff;*/
+	background-color: #5ba5af;
+}
+
+.nav-main li
+{
+	text-transform: uppercase;
+	display: inline-block;
+
+	/*width: 160px;*/
+	/*background-color: #fff;*/
+
+}
+
+.nav-main li a
+{
+	color: #fff;
+	padding: 0 16px;
+	line-height: 3.5em;
+
+	height: 58px;
+	background-image: none;
+	box-shadow: none;
+	/*background-color: #5ba5af;*/
+
+}
+
+.navbar-default .nav>li>a:hover,.navbar-default  .nav>li>a:focus,.navbar-default  .nav>li.active>a
+{
+	color: #393939;
 	background-image: none;
 	background-color: #fff;
 	box-shadow: none;
@@ -123,41 +170,16 @@ header .navbar
 	}
 }
 
-.nav-main .nav 
-{
-	margin: 0;
-	background-color: #fff;
+/*Navbar collapsed*/
+@media (max-width: 768px){
+	.navbar-default .navbar-nav > li {
+		display: block;
+	}
+	.navbar-default .nav>li>a:hover,.navbar-default  .nav>li>a:focus,.navbar-default  .nav>li.active>a
+	{
+		background-color: #ddd;
+	}
 }
-
-.nav-main li
-{
-	text-transform: uppercase;
-	display: inline-block;
-	width: 160px;
-	background-color: #fff;
-
-}
-
-.nav-main li a
-{
-	color: #fff;
-	padding: 0 16px;
-	line-height: 3.5em;
-
-	height: 58px;
-	background-image: none;
-	box-shadow: none;
-	background-color: #5ba5af;
-
-}
-
-.nav>li>a:hover, .nav>li>a:focus, .nav>li.active>a
-{
-	color: #393939;
-	background-image:none;
- 	transform: perspective( 600px ) ;
-}
-
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////
@@ -209,6 +231,48 @@ header .navbar
 
 	}
 }
+
+@media (max-width: 768px){
+	
+	/*Vraiment falloir que je passe ce code en sass*/
+	.frise-item
+	{
+		border:1px solid;
+		position: relative;
+	}
+
+	.col-frise:not(:last-child) .frise-item.front
+	{
+		/*z-index: 5;*/
+		/*background-color:#fff;*/
+	}
+
+	.col-frise:nth-child(1) .frise-item
+	{
+		z-index: 1;
+		top: 21em;
+	}
+	.col-frise:nth-child(2) .frise-item
+	{
+		z-index: 2;
+		top:3em;
+
+	}
+	.col-frise:nth-child(3) .frise-item
+	{
+		z-index: 3;
+		top:-16em;
+
+	}
+	.col-frise:nth-child(4) .frise-item
+	{
+		z-index: 4;
+		top:-34em;
+
+	}
+
+}
+
 
 .frise-item, .comp-item, .projet-item
 {
@@ -274,13 +338,16 @@ header .navbar
 	height:200px;
 }
 
-#footer, .push {
-	height: 58px;
+#footer{
+	height: 60px;
 }
 
 #footer
 {
-	height: 58px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
 
 	background-color: #262626;
 }
@@ -288,5 +355,6 @@ header .navbar
 #footer p
 {
 	color: #eee;
-	padding: 15px;
+	margin:0;
+	padding: 10px 5px;
 }
