@@ -282,11 +282,6 @@ header .navbar
 	background-color: #5ba5af;
 }
 
-.projet-item-content
-{
-	vertical-align: middle;
-}
-
 
 .projet-item
 {
@@ -294,16 +289,14 @@ header .navbar
     transition:.2s ease-in-out;
 
 	border: 8px dotted rgba(91, 165, 175, 1);
-
 }
 
-.projet-item:hover
+
+.projet-item-content.item-meta
 {
-	
-	border-width:0px;
-    
-	
+	top:25%;
 }
+
 
 
 
@@ -320,6 +313,11 @@ header .navbar
 		z-index: 0;
 
 	}
+
+	.projet-item:hover{
+		border-width:0px;
+	}
+
 }
 
 @media (max-width: 768px){
@@ -355,7 +353,10 @@ header .navbar
 
 	}
 
-
+	#parcours p.text-parcours
+	{
+		margin-top: -10em;
+	}
 
 	.comp-item, .projet-item
 	{
@@ -383,5 +384,5 @@ header .navbar
 {
 	color: #eee;
 	margin:0;
-	padding: 10px 5px;
+	padding: 15px 15px 0 0;
 }
