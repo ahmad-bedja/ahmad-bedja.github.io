@@ -379,14 +379,14 @@ a, .projet-item, .frise-item,#apropos
 }
 
 #seperator {
-	height: 300px;
+	height: 350px;
 	display: block;
 	float: left;
 }
 
 #contact
 {
-	min-height: 300px;
+	min-height: 350px;
 	background-color: #000;
 	position: fixed;
 	bottom: 0;
@@ -431,7 +431,7 @@ a, .projet-item, .frise-item,#apropos
 #footer .credit
 {
 	position: relative;
-	bottom: -55px;
+	bottom: -100px;
 	right: 15px;
 	color: #eee;
 	margin:0;
