@@ -15,7 +15,6 @@ $(document).ready(function() {
 
 	$('body').scrollspy({ target: '#navbar',offset: $('#navbar').height() });
 
-	// alert();
 	$("#navbar ul li a[href^='#']").on('click', function(e) {
 
 		// prevent default anchor click behavior

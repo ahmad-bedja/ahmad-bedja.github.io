@@ -378,12 +378,47 @@ a, .projet-item, .frise-item,#apropos
 
 }
 
-
-#footer{
-	height: 60px;
+#seperator {
+	height: 300px;
+	display: block;
+	float: left;
 }
 
-#footer
+#contact
+{
+	min-height: 300px;
+	background-color: #000;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+}
+
+#contact .contact-item
+{
+	width: 200px;
+	height: 200px;
+	background: url("../img/mail-white.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	
+	border:100px dashed rgba(0, 0, 0, 0.7);
+
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#contact .contact-item:hover
+{
+	border: 1px dashed rgba(0,0,0,7);
+}
+
+/*#footer
 {
 	position: absolute;
 	bottom: 0;
@@ -392,10 +427,13 @@ a, .projet-item, .frise-item,#apropos
 
 	background-color: #262626;
 }
-
-#footer p
+*/
+#footer .credit
 {
+	position: relative;
+	bottom: -55px;
+	right: 15px;
 	color: #eee;
 	margin:0;
-	padding: 15px 15px 0 0;
+	/*padding: 15px 15px 0 0;*/
 }
