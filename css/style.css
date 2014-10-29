@@ -89,7 +89,7 @@ a, .projet-item, .frise-item,#apropos
 	color: #5BA5AF;
 }
 
-header .navbar
+#navbar
 {
 	margin-top: 40px;
 
@@ -103,7 +103,29 @@ header .navbar
 	box-shadow: none;
 }
 
-header .navbar-collapse ul.navbar-nav
+.navbar-wrap
+{
+	min-height: 58px;
+}
+
+#navbar.affix {
+	position: fixed;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 8;
+}
+
+#navbar.affix + .section
+{
+	margin-top: 98px; /*40 + 58*/
+	transition:none;
+}
+
+
+
+
+#navbar .navbar-collapse ul.navbar-nav
 {
 	margin: 0;
 }
@@ -187,7 +209,7 @@ header .navbar-collapse ul.navbar-nav
 .section
 {
 	padding:40px;
-	min-height: 400px;
+	min-height: 600px;
 }
 
 .section p.text-justify
@@ -316,6 +338,7 @@ header .navbar-collapse ul.navbar-nav
 	{
 		border:1px solid;
 		position: relative;
+		margin: auto;
 	}
 
 	.col-frise:nth-child(1) .frise-item
@@ -350,6 +373,7 @@ header .navbar-collapse ul.navbar-nav
 	.comp-item, .projet-item
 	{
 		height: auto;
+		margin: auto;
 	}
 
 }
