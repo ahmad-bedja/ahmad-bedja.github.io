@@ -16,20 +16,9 @@ body
 	margin-bottom: 60px;
 	font-size: 1.6em;
 
-	/*background-color: #5ba5af;*/
-}
-html, body,#wrapper
-{
-	/*height: 100%;*/
+	background-color: #fff;
 }
 
-/*#wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: auto 0 -58px;
-}
-*/
 * { text-shadow: none !important; }
 a:hover { text-decoration: none;}
 
@@ -89,9 +78,15 @@ a, .projet-item, .frise-item,#apropos
 	color: #5BA5AF;
 }
 
+#header
+{
+	background-color: #fff;
+}
+
 #navbar
 {
 	margin-top: 40px;
+	margin-bottom: 0;
 
 	background-color: #5ba5af;
 	height: 58px;
@@ -106,6 +101,7 @@ a, .projet-item, .frise-item,#apropos
 .navbar-wrap
 {
 	min-height: 58px;
+	background-color: #fff;
 }
 
 #navbar.affix {
@@ -116,11 +112,15 @@ a, .projet-item, .frise-item,#apropos
 	z-index: 8;
 }
 
+
+/*
+
+peut pas utiliser ca car je dois ajouter un parent à navbar
 #navbar.affix + .section
 {
-	margin-top: 98px; /*40 + 58*/
+	margin-top: 98px; 
 	transition:none;
-}
+}*/
 
 
 
@@ -391,7 +391,7 @@ a, .projet-item, .frise-item,#apropos
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	z-index: -1;
+	z-index: -5;
 	width: 100%;
 }
 
@@ -432,7 +432,7 @@ a, .projet-item, .frise-item,#apropos
 {
 	position: relative;
 	bottom: -100px;
-	right: 15px;
+	/*right: 15px;*/
 	color: #eee;
 	margin:0;
 	/*padding: 15px 15px 0 0;*/

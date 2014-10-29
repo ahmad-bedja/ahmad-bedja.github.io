@@ -11,7 +11,15 @@ $(document).ready(function() {
         offset: {
             top: $('.container-header').height()+parseInt($('#navbar').css('margin-top'))
         }
-    }); 
+    });
+
+	$("#navbar").on('affix.bs.affix', function(){
+		$(".section:first-of-type").css({"margin-top":"98px","transition":"none"});
+	});
+
+	$("#navbar").on('affix-top.bs.affix', function(){
+		$(".section:first-of-type").css({"margin-top":"0","transition":"none"});
+	});
 
 	$('body').scrollspy({ target: '#navbar',offset: $('#navbar').height() });
 
