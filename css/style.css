@@ -33,11 +33,6 @@ a, .projet-item, .frise-item,#apropos
 	transition: all .3s ease;
 }
 
-/*#page-header, #page-header>.container-fluid,#page-header .navbar
-{
-	background-color: #fff;
-}
-*/
 .container-fluid {
     padding: 0px;
 }
@@ -418,22 +413,16 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 	border: 1px dashed rgba(0,0,0,7);
 }
 
-/*#footer
+.tooltip.bottom
 {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-
-	background-color: #262626;
+	margin-left: 15px;
 }
-*/
+
 footer .credit
 {
 	position: relative;
 	bottom: -100px;
 	/*right: 15px;*/
-	color: #eee;
+	color: #959595;
 	margin:0;
-	/*padding: 15px 15px 0 0;*/
 }

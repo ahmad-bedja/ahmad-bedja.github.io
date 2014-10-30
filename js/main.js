@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+	$('.contact-col').tooltip({
+		delay: { "show": 500, "hide": 0 },
+		placement: "bottom",
+	});
+
 	$('#navbar .navbar-collapse').on('show.bs.collapse', function () {
 		$("#apropos").css("padding-top","+="+$("#apropos").height() );
 	});
@@ -36,4 +41,10 @@ $(document).ready(function() {
 			scrollTop: $(this.hash).offset().top
 		}, 300);
 	});
+});
+
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
 });
