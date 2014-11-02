@@ -84,19 +84,12 @@ a, .projet-item, .frise-item,#apropos
 	margin-bottom: 0;
 
 	background-color: #5ba5af;
-	height: 58px;
 	border-radius: 0px;
 	font-weight: 700;
 
 	border-width: 0;
 	background-image: none;
 	box-shadow: none;
-}
-
-.navbar-wrap
-{
-	min-height: 58px;
-	background-color: #fff;
 }
 
 #navbar.affix {
@@ -120,9 +113,9 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 
 
 
-#navbar .navbar-collapse ul.navbar-nav
+#navbar .navbar-header
 {
-	margin: 0;
+	margin-right: 0;
 }
 
 .navbar .navbar-toggle .icon-bar {
@@ -133,24 +126,32 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 	border-radius: 0;
 }
 
+#navbar .nav-main
+{
+	width: 100%;
+	border: none;
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
 
 .nav-main .nav 
 {
 	background-color: #5ba5af;
+	margin: 0;
+	text-align: center;
+
 }
 
 .nav-main li
 {
 	text-transform: uppercase;
-	display: inline-block;
 }
 
 .nav-main li a
 {
 	color: #fff;
-	padding: 0 16px;
-	line-height: 3.5em;
-	height: 58px;
 	background-image: none;
 	box-shadow: none;
 }
@@ -165,14 +166,14 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 
 
 @media (min-width: 768px) {
-	.navbar .navbar-nav {
-		display: inline-block;
+	.navbar .navbar-nav  {
 		float: none;
 		vertical-align: top;
 	}
 
-	.navbar .navbar-collapse {
-		text-align: center;
+	.navbar .navbar-nav li {
+		display: inline-block;
+		float: none;
 	}
 
 
@@ -181,15 +182,9 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 
 /*Navbar collapsed*/
 @media (max-width: 768px){
-	.navbar-default .navbar-nav > li {
-		display: block;
-	}
 	.navbar-default .nav>li>a:hover,.navbar-default  .nav>li>a:focus,.navbar-default  .nav>li.active>a
 	{
 		background-color: #ddd;
-	}
-	.navbar .navbar-header{
-		margin-right: 0;
 	}
 
 
@@ -413,10 +408,17 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 	border: 1px dashed rgba(0,0,0,7);
 }
 
-.tooltip.bottom
+.mail-col
 {
-	margin-left: 15px;
+	position: absolute;
+	color: #fff;
 }
+
+.contact-item,.mail-item
+{
+	margin: auto;
+}
+
 
 footer .credit
 {

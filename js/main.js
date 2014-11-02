@@ -1,16 +1,16 @@
 $(document).ready(function() {
 
-	$('.contact-col').tooltip({
-		delay: { "show": 500, "hide": 0 },
-		placement: "bottom",
+	var $mail = $(".mail-col");
+	$mail.css({'top':parseInt($(".contact-item").css('height')) });
+	$mail.hide();
+
+	$(".contact-item").hover(function(){
+		$mail.slideDown(200);
+	});
+	$("#contact .row").hover(function(){},function(){
+		setTimeout(function(){ $mail.slideUp(200); }, 1000);
 	});
 
-	$('#navbar .navbar-collapse').on('show.bs.collapse', function () {
-		$("#apropos").css("padding-top","+="+$("#apropos").height() );
-	});
-	$('#navbar .navbar-collapse').on('hide.bs.collapse', function () {
-		$("#apropos").css("padding-top",0 );
-	});
 
 	$('#navbar').affix({
         offset: {
