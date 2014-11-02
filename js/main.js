@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	var $mail = $(".mail-col");
 	$mail.css({'top':parseInt($(".contact-item").css('height')) });
-	$mail.hide();
+	// $mail.hide();
 
 	$(".contact-item").hover(function(){
 		$mail.slideDown(200);

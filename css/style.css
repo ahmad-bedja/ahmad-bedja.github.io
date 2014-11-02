@@ -319,6 +319,10 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 		border-width:0px;
 	}
 
+	.mail-col {
+		display: none;
+	}
+
 }
 
 @media (max-width: 768px){
