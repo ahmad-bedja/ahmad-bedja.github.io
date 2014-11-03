@@ -7,8 +7,8 @@ $(document).ready(function() {
 	$(".contact-item").hover(function(){
 		$mail.slideDown(200);
 	});
-	$("#contact .row").hover(function(){},function(){
-		setTimeout(function(){ $mail.slideUp(200); }, 1000);
+	$("#contact ").hover(function(){},function(){
+		setTimeout(function(){ $mail.slideUp(200); }, 200);
 	});
 
 

@@ -126,6 +126,15 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 	border-radius: 0;
 }
 
+.navbar .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+{
+	background-color: transparent;
+}
+.navbar .navbar-toggle:active
+{
+	background-color: #ddd;
+}
+
 #navbar .nav-main
 {
 	width: 100%;
@@ -372,15 +381,18 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 
 }
 
+#seperator,#contact
+{
+	height: 360px;
+}
+
 #seperator {
-	height: 350px;
 	display: block;
 	float: left;
 }
 
 #contact
 {
-	min-height: 350px;
 	background-color: #000;
 	position: fixed;
 	bottom: 0;
@@ -426,9 +438,10 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 
 footer .credit
 {
-	position: relative;
-	bottom: -100px;
-	/*right: 15px;*/
+	position: absolute;
+	/*bottom: -100px;*/
+	bottom: 10px;
+	right: 10px;
 	color: #959595;
 	margin:0;
 }
