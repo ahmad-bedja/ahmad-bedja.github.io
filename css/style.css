@@ -284,10 +284,9 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 {
 	position: relative;
 	top: 45%;
-	/*background: transparent url(../img/java_g.png);*/
 }
 
-#projets
+#projets,#interets
 {
 	background-color: #5ba5af;
 }
@@ -308,8 +307,26 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 }
 
 
+#interets
+{
+	border-top: 5px dashed #fff;
 
+}
 
+#interets .row-interets
+{
+	margin-bottom: 200px;
+}
+
+#interets .interet-item
+{
+	background-color: #fff;
+	margin-bottom: 50px;
+	border-radius: 3px;
+	padding: 15px 10px;
+	text-align: center;
+	font-weight: 700;
+}
 
 @media screen and (min-width: 768px){
 	.frise:after{
