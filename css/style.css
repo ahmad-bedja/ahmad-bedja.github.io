@@ -298,7 +298,7 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 	-webkit-transition:.2s ease-in-out;
     transition:.2s ease-in-out;
 
-	border: 8px dotted rgba(91, 165, 175, 1);
+	border: 8px dashed rgba(91, 165, 175, 1);
 }
 
 
@@ -331,6 +331,13 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 	.mail-col {
 		display: none;
 	}
+
+	@-moz-document url-prefix() {
+		.mail-col {
+			display: block;
+		}
+	}
+
 
 }
 
@@ -417,6 +424,7 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 	-ms-transition: 0.5s ease;
 	-o-transition: 0.5s ease;
 	transition: 0.5s ease;
+
 }
 
 #contact .contact-item:hover
