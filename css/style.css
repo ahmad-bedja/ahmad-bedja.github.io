@@ -15,12 +15,12 @@ body
 {
 	margin-bottom: 60px;
 	font-size: 1.6em;
-
 	background-color: #fff;
 }
 
 * { text-shadow: none !important; }
-a:hover { text-decoration: none;}
+
+a,a:hover { text-decoration: none;}
 
 
 a, .projet-item, .frise-item,#apropos
@@ -99,18 +99,6 @@ a, .projet-item, .frise-item,#apropos
 	width: 100%;
 	z-index: 8;
 }
-
-
-/*
-
-peut pas utiliser ca car je dois ajouter un parent à navbar
-#navbar.affix + .section
-{
-	margin-top: 98px; 
-	transition:none;
-}*/
-
-
 
 
 #navbar .navbar-header
@@ -208,13 +196,17 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 .section
 {
 	padding:40px;
+	padding-top: 60px;
 	min-height: 600px;
 }
 
-.section p.text-justify
+
+.section p
 {
-	margin-top: 20px; 
+	font-family: Verdana;
+	margin-top: 60px;
 }
+
 .section .section-titre
 {
 	margin-bottom: 40px;
@@ -227,7 +219,7 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 
 #parcours, #competences
 {
-	background-color: #eee;/*#8bc8d0;*/
+	background-color: #eee;
 }
 
 
@@ -243,7 +235,6 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 	border-radius: 50%;
 	width: 180px;
 	height: 180px;
-	/*line-height: 11em;*/
 	text-align: center;
 
 	font-weight: 700;
@@ -289,6 +280,11 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 #projets,#interets
 {
 	background-color: #5ba5af;
+}
+
+.row-projets
+{
+	margin-top: 80px;
 }
 
 
@@ -449,10 +445,14 @@ peut pas utiliser ca car je dois ajouter un parent à navbar
 	border: 1px dashed rgba(0,0,0,7);
 }
 
+#contact a
+{
+	color: #959595;
+}
+
 .mail-col
 {
 	position: absolute;
-	color: #fff;
 }
 
 .contact-item,.mail-item
