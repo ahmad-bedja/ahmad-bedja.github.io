@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	// gestion de l'affichage de l'adresse mail affichée en bas de page
 	var $mail = $("#contact-link");
-	// $mail.css({'top':parseInt($(".contact-item").css('height')) });
+	$mail.css({'top':parseInt($(".contact-item").css('height')) });
 	$(".contact-item").hover(function(){
 		$mail.slideDown(200);
 	});

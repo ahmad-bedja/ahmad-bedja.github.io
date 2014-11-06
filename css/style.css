@@ -65,7 +65,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 {
 	margin: 0 ;
 	padding: 20px 30px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI",Verdana;
 }
 
 .topbar .profession
@@ -254,7 +254,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 
 .frise-item-lieu
 {
-	font-family: "Segoe UI";
+	font-family: "Segoe UI",Verdana;
 	color: #eee;
 	display: block;
 	color: #4e4d4d;
@@ -278,9 +278,14 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	top: 45%;
 }
 
+.col-cv
+{
+	text-align: center;
+}
+
 #cv
 {
-	width: 500px;
+	/*width: 500px;*/
 	height: 50px;
 	font-weight: 700;
 	background-color: #f5f5f5;
