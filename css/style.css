@@ -23,7 +23,7 @@ body
 a,a:hover { text-decoration: none;}
 
 
-a, .projet-item, .frise-item,#apropos,#cv
+a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 {
 
 	-webkit-transition: all .3s ease;
@@ -359,7 +359,7 @@ a, .projet-item, .frise-item,#apropos,#cv
 		border-width:0px;
 	}
 
-	.mail-col {
+	#contact-link {
 		display: none;
 	}
 
@@ -440,6 +440,11 @@ a, .projet-item, .frise-item,#apropos,#cv
 	width: 100%;
 }
 
+#contact .contact-col
+{
+	text-align: center;
+}
+
 #contact .contact-item
 {
 	width: 200px;
@@ -469,12 +474,8 @@ a, .projet-item, .frise-item,#apropos,#cv
 	color: #959595;
 }
 
-.mail-col
-{
-	position: absolute;
-}
 
-.contact-item,.mail-item
+.contact-item
 {
 	margin: auto;
 }

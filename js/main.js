@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
 	// gestion de l'affichage de l'adresse mail affichée en bas de page
-	var $mail = $(".mail-col");
-	$mail.css({'top':parseInt($(".contact-item").css('height')) });
+	var $mail = $("#contact-link");
+	// $mail.css({'top':parseInt($(".contact-item").css('height')) });
 	$(".contact-item").hover(function(){
 		$mail.slideDown(200);
 	});
-	$("#contact ").hover(function(){},function(){
+	$("#contact").hover(function(){},function(){
 		setTimeout(function(){ $mail.slideUp(200); }, 200);
 	});
 
