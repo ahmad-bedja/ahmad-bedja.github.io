@@ -18,12 +18,12 @@ body
 	background-color: #fff;
 }
 
-* { text-shadow: none !important; }
+* { text-shadow: none !important;box-shadow: none !important;}
 
 a,a:hover { text-decoration: none;}
 
 
-a, .projet-item, .frise-item,#apropos
+a, .projet-item, .frise-item,#apropos,#cv
 {
 
 	-webkit-transition: all .3s ease;
@@ -148,7 +148,6 @@ a, .projet-item, .frise-item,#apropos
 
 #navbar .nav-main li>a
 {
-	/*color: #fff;*/
 	color: #227580;
 
 	background-image: none;
@@ -266,7 +265,7 @@ a, .projet-item, .frise-item,#apropos
 	border-top: 5px dashed #5ba5af;
 }
 
-.comp-item, .projet-item
+.comp-item, .projet-item,#cv
 {
 	border-radius: 10px;
 	padding: 10px;
@@ -277,6 +276,25 @@ a, .projet-item, .frise-item,#apropos
 {
 	position: relative;
 	top: 45%;
+}
+
+#cv
+{
+	width: 500px;
+	height: 50px;
+	font-weight: 700;
+	background-color: #f5f5f5;
+	background-image: none;
+	color: #5ba5af;
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+}
+#cv:hover
+{
+	background-color: #227580;
+	color: #fff;
+
 }
 
 #projets,#interets
@@ -322,6 +340,8 @@ a, .projet-item, .frise-item,#apropos
 	color: #227580;
 }
 
+/* media queries des sections */
+
 @media screen and (min-width: 768px){
 	.frise:after{
 		content: "";
@@ -351,6 +371,7 @@ a, .projet-item, .frise-item,#apropos
 
 
 }
+
 
 @media (max-width: 768px){
 	
