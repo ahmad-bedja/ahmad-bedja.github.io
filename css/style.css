@@ -108,7 +108,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 
 	background-color: #5ba5af;
 	border-radius: 0px;
-	font-weight: 700;
+	font-weight: bold;
 
 	border-width: 0;
 	background-image: none;
@@ -243,8 +243,23 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	background-color: #eee;
 }
 
-.col-frise,.col-comp,.comp-projet,.col-int
+.col-frise,.col-comp,.comp-projet,.col-int, .col-cv
 {
+	text-align: center;
+}
+
+.frise-item, .comp-item, .projet-item
+{
+	position: relative;
+	border-radius: 50%;
+	width: 180px;
+	height: 180px;
+	line-height: 180px;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	color: #5ba5af;
+	z-index: 1;
+
 	text-align: center;
 }
 
@@ -254,26 +269,11 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	margin-top: 50px;
 }
 
-
-.frise-item, .comp-item, .projet-item
+.frise-item-content,.comp-item-content
 {
-	position: relative;
-	border-radius: 50%;
-	width: 180px;
-	height: 180px;
-
-	font-weight: 700;
-	background-color: #f5f5f5;
-	color: #5ba5af;
-	z-index: 1;
-
-}
-
-.frise-item-content, .projet-item-content
-{
-	text-align: center;
-	position: relative;
-	top: 40%;
+	vertical-align: middle;
+	display: inline-block;
+	line-height: normal;
 }
 
 .frise-item-lieu
@@ -296,28 +296,16 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	margin: 10px;
 }
 
-.comp-item-content
-{
-	position: relative;
-	top: 45%;
-}
-
-.col-cv
-{
-	text-align: center;
-}
-
 #cv
 {
 	height: 50px;
 	padding: 15px;
-	font-weight: 700;
+	font-weight: bold;
 	background-color: #f5f5f5;
 	background-image: none;
 	color: #5ba5af;
 	border: none;
 	font-size: 1em;
-
 }
 
 #cv:hover
@@ -336,19 +324,23 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	margin-top: 80px;
 }
 
-
 .projet-item
 {
 	-webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease;
+	transition: all .2s ease-in-out;
 
-	border: 8px dashed rgba(91, 165, 175, 1);
+	border: 8px dashed #5ba5af;
 }
 
 
-.projet-item-content.item-meta
+.projet-item-content
 {
-	top:25%;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
 }
 
 
@@ -364,8 +356,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	margin-bottom: 50px;
 	border-radius: 3px;
 	padding: 15px 10px;
-	text-align: center;
-	font-weight: 700;
+	font-weight: bold;
 	color: #227580;
 }
 
