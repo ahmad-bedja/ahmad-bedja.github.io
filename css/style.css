@@ -22,6 +22,7 @@ body
 
 a,a:hover { text-decoration: none;}
 
+p {font-family: Verdana;}
 
 a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 {
@@ -222,9 +223,9 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 }
 
 
-.section p
+.section p:first-child
 {
-	font-family: Verdana;
+	
 	margin-top: 60px;
 }
 
