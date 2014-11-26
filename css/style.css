@@ -22,7 +22,11 @@ body
 
 a,a:hover { text-decoration: none;}
 
-p {font-family: Verdana;}
+p
+{
+	font-family: "Open Sans","Helvetica Neue",Verdana,Arial,sans-serif;;
+	font-size: 1.1em;
+}
 
 a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 {
@@ -226,7 +230,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 .section p:first-child
 {
 	
-	margin-top: 60px;
+	/*margin-top: 60px;*/
 }
 
 .section .section-titre
@@ -237,6 +241,15 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 #apropos
 {
 	background-color: #fff;
+}
+
+#myface
+{
+	height: 200px;
+	max-width: auto;
+	margin-top: 100px;
+	border-radius: 5px;
+
 }
 
 #parcours, #competences
@@ -268,6 +281,11 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 .frise
 {
 	margin-top: 50px;
+}
+
+.col-frise, .col-comp
+{
+	margin-bottom: 40px;
 }
 
 .frise-item-content,.comp-item-content
@@ -325,16 +343,6 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	margin-top: 80px;
 }
 
-.projet-item
-{
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease;
-	transition: all .2s ease-in-out;
-
-	border: 8px dashed #5ba5af;
-}
 
 
 .projet-item-content
@@ -375,6 +383,17 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 		z-index: 0;
 	}
 
+	.projet-item{
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease;
+		transition: all .2s ease-in-out;
+
+		border: 8px dashed #5ba5af;
+	}
+
+
 	.projet-item:hover{
 		border-width:0px;
 	}
@@ -401,39 +420,50 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 		margin: auto;
 	}
 
+	.col-frise
+	{
+		float: none;
+	}
+
 	.col-frise:nth-child(1) .frise-item
 	{
 		z-index: 1;
-		top: 21em;
+		top: 375px;
 	}
 	.col-frise:nth-child(2) .frise-item
 	{
 		z-index: 2;
-		top:3em;
+		top:30px;
 
 	}
 	.col-frise:nth-child(3) .frise-item
 	{
 		z-index: 3;
-		top:-16em;
+		top:-305px;
 
 	}
 	.col-frise:nth-child(4) .frise-item
 	{
 		z-index: 4;
-		top:-34em;
+		top:-650px;
 
 	}
 
 	#parcours p.text-parcours
 	{
-		margin-top: -10em;
+		margin-top: -300px;
 	}
 
+	.col-comp
+	{
+		text-align: center;
+	}
 	.comp-item, .projet-item
 	{
 		height: auto;
-		margin: auto;
+		padding: 20px;
+		margin: 2px;
+		line-height: normal;
 	}
 
 }
