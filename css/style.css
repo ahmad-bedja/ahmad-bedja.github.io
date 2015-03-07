@@ -257,7 +257,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	background-color: #eee;
 }
 
-.col-frise,.col-comp,.comp-projet,.col-int, .col-cv
+.col-frise,.col-comp,.col-projet,.col-int, .col-cv
 {
 	text-align: center;
 }
@@ -266,7 +266,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 {
 	position: relative;
 	border-radius: 50%;
-	width: 180px;
+	/*width: 180px;*/
 	height: 180px;
 	line-height: 180px;
 	font-weight: bold;
