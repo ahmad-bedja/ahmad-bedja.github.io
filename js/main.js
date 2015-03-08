@@ -25,7 +25,7 @@ $(document).ready(function() {
 	});
 
 
-	$('body').scrollspy({ target: '#navbar',offset: $('#navbar').height() });
+	$('body').scrollspy({ target: '#navbar',offset: $('#navbar').height()*3  });
 
 	//scroll to anchor
 	$("#navbar ul li a[href^='#']").on('click', function(e) {

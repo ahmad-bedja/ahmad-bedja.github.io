@@ -182,12 +182,17 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	box-shadow: none;
 }
 
-.navbar-default .nav>li>a:hover,.navbar-default  .nav>li>a:focus,.navbar-default  .nav>li.active>a
+.navbar-default .nav>li>a:hover, .navbar-default .nav>li>a:focus,.navbar-default .nav>li.active>a
 {
 	color: #393939;
 	background-image: none;
-	background-color: #fff;
+	background-color: #eee;
 	box-shadow: none;
+}
+
+.navbar-default .nav>li>a[href='#apropos']:hover, .navbar-default .nav>li>a[href='#apropos']:focus, .navbar-default .nav>li.active>a[href='#apropos']
+{
+	background-color: #fff;
 }
 
 /* media queries navbar */
