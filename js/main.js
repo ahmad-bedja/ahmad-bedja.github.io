@@ -1,20 +1,20 @@
 $(document).ready(function() {
 
 	// gestion de l'affichage de l'adresse mail affichée en bas de page
-	var $mail = $("#contact-link");
-	$mail.css({'top':parseInt($(".contact-item").css('height')) });
-	$(".contact-item").hover(function(){
-		$mail.slideDown(200);
-	});
-	$("#contact").hover(function(){},function(){
-		setTimeout(function(){ $mail.slideUp(200); }, 200);
-	});
+	// var $mail = $("#contact-link");
+ 	// $mail.css({'top':parseInt($(".contact-item").css('height')) });
+	// $(".contact-item").hover(function(){
+	// 	$mail.slideDown(200);
+	// });
+	// $("#contact").hover(function(){},function(){
+	// 	setTimeout(function(){ $mail.slideUp(200); }, 200);
+	// });
 
 
 	// NAVBAR Affix
 	$('#navbar').affix({
         offset: {
-            top: $('.container-header').height()+parseInt($('#navbar').css('margin-top'))
+            top: $('.container-header').height()+parseInt($('#navbar').css('margin-top')+10),
         }
     });
 	$("#navbar").on('affix.bs.affix', function(){
@@ -24,8 +24,19 @@ $(document).ready(function() {
 		$(".section:first-of-type").css({"margin-top":"0","transition":"none"});
 	});
 
+	$(".show-details").click(function(){
+		$details = $("#viewdetails");
+		$details.removeClass("hidden-xs");
+		$details.collapse({
+            toggle: true
+        });
 
-	$('body').scrollspy({ target: '#navbar',offset: $('#navbar').height()*3  });
+
+	});
+
+
+
+	$('body').scrollspy({ target: '#navbar',offset: $('#navbar').height()*1.3  });
 
 	//scroll to anchor
 	$("#navbar ul li a[href^='#']").on('click', function(e) {
@@ -40,11 +51,24 @@ $(document).ready(function() {
 			scrollTop: $(this.hash).offset().top
 		}, 300);
 	});
-});
 
-//cacher la navbar quand un item est selectioné (mode mobile)
-$(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') ) {
-        $(this).collapse('hide');
-    }
+	//cacher la navbar quand un item est selectioné (mode mobile)
+	$(document).on('click','.navbar-collapse.in',function(e) {
+	    if( $(e.target).is('a') ) {
+	        $(this).collapse('hide');
+	    }
+	});
+
+	$('body').on('activate.bs.scrollspy', function (ev) {
+		// console.log($(ev.target).attr('id'));
+		if($(ev.target).attr('id') === 'li_contact'){
+			$('#navbar .navbar-nav, #navbar .navbar-header').addClass('end-of-page');
+		}else {
+			if(!$('#li_contact').hasClass('active')){
+				$('#navbar .navbar-nav, #navbar .navbar-header').removeClass('end-of-page');
+			}
+		}
+
+	});
+
 });

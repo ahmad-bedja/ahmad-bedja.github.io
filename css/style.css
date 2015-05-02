@@ -22,15 +22,12 @@ body
 
 a,a:hover { text-decoration: none;}
 
-p
-{
+p {
 	font-family: "Open Sans","Helvetica Neue",Verdana,Arial,sans-serif;;
 	font-size: 1.1em;
 }
 
-a, .projet-item, .frise-item,#apropos,#cv,#contact-link
-{
-
+a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-ms-transition: all .3s ease;
@@ -42,14 +39,12 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
     padding: 0px;
 }
 
-.topbar
-{
+.topbar {
 	min-height: 40px;
 }
 
 
-.greybar
-{
+.greybar {
 
 	background: -webkit-linear-gradient( #eee,#fff);
 	background:    -moz-linear-gradient( #eee,#fff);
@@ -58,31 +53,26 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	background:         linear-gradient( #eee,#fff);
 }
 
-.topbar h2
-{
+.topbar h2 {
 	margin: 0 ;
 	padding: 20px 30px;
 	font-family: "Segoe UI",Verdana;
 }
 
-.topbar .profession
-{
+.topbar .profession {
 	color: #5BA5AF;
 }
 
-.upper
-{
+.upper {
 	text-transform: uppercase;
 }
 
 
-#header
-{
+#header {
 	background-color: #fff;
 }
 
-.wrapper
-{
+.wrapper {
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 15px;
@@ -103,7 +93,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	}
 }
 
-/***************** NAVBAR  
+/***************** NAVBAR
 ******************/
 
 #navbar
@@ -111,13 +101,11 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	margin-top: 40px;
 	margin-bottom: 0;
 
-	background-color: #5ba5af;
+	background-image: none;
 	border-radius: 0px;
 	font-weight: bold;
-
-	border-width: 0;
-	background-image: none;
 	box-shadow: none;
+	border-width: 0;
 }
 
 #navbar.affix {
@@ -134,25 +122,24 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	margin-right: 0;
 }
 
-.navbar .navbar-toggle .icon-bar {
+#navbar .navbar-toggle .icon-bar {
 	background-color: #eee;
 }
-.navbar .navbar-toggle  {
+#navbar .navbar-toggle  {
 	border-color: #ddd;
 	border-radius: 0;
 }
 
-.navbar .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+#navbar .navbar-toggle:hover, #navbar .navbar-toggle:focus
 {
 	background-color: transparent;
 }
-.navbar .navbar-toggle:active
+#navbar .navbar-toggle:active
 {
 	background-color: #ddd;
 }
 
-#navbar .nav-main
-{
+#navbar .nav-main {
 	width: 100%;
 	border: none;
 	margin-right: 0;
@@ -161,8 +148,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	padding-left: 0;
 }
 
-.nav-main .nav 
-{
+.nav-main .nav {
 	background-color: #5ba5af;
 	margin: 0;
 	text-align: center;
@@ -174,47 +160,57 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	text-transform: uppercase;
 }
 
-#navbar .nav-main li>a
-{
+#navbar .nav-main li > a {
 	color: #227580;
 
 	background-image: none;
 	box-shadow: none;
+	padding: 1em;
 }
 
-.navbar-default .nav>li>a:hover, .navbar-default .nav>li>a:focus,.navbar-default .nav>li.active>a
-{
+#navbar .nav>li>a:hover, #navbar .nav>li>a:focus, #navbar .nav>li.active>a {
 	color: #393939;
 	background-image: none;
 	background-color: #eee;
 	box-shadow: none;
 }
 
-.navbar-default .nav>li>a[href='#apropos']:hover, .navbar-default .nav>li>a[href='#apropos']:focus, .navbar-default .nav>li.active>a[href='#apropos']
-{
+#navbar .nav>li>a[href='#apropos']:hover, #navbar .nav>li>a[href='#apropos']:focus, #navbar .nav>li.active>a[href='#apropos'] {
 	background-color: #fff;
 }
 
 /* media queries navbar */
 @media (min-width: 768px) {
-	.navbar .navbar-nav  {
+	#navbar {
+		border-width: 1em 4em 0;
+		border-color: #fff;
+	}
+
+	#navbar .navbar-nav  {
 		float: none;
 		vertical-align: top;
 	}
 
-	.navbar .navbar-nav li {
+	#navbar .navbar-nav li {
 		display: inline-block;
 		float: none;
+	}
+
+	#navbar .nav-main li > a {
+		padding: 1.3em;
 	}
 }
 
 /*Navbar collapsed*/
 @media (max-width: 768px){
-	.navbar-default .nav>li>a:hover,.navbar-default  .nav>li>a:focus,.navbar-default  .nav>li.active>a
-	{
-		background-color: #ddd;
+
+	#navbar {
+		background-color: #5ba5af;
 	}
 
+	#navbar .nav>li>a:hover, #navbar .nav>li>a:focus, #navbar  .nav>li.active>a {
+		background-color: #ddd;
+	}
 
 }
 
@@ -224,32 +220,58 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////*/
-.section
+.section, #contact
 {
 	padding:40px;
 	padding-top: 60px;
 	min-height: 600px;
+
 }
 
+.fake-border {
+	width: 100%;
+	height: 5px;
+	background-color: #FFF;
 
-.section p:first-child
-{
-	
-	/*margin-top: 60px;*/
+	border-style: none solid;
+	border-image: none;
+	border-width: 5px;
+	border-color: #FFF;
 }
 
-.section .section-titre
-{
+.section .section-titre {
 	margin-bottom: 40px;
 }
 
-#apropos
-{
+#apropos {
 	background-color: #fff;
 }
 
-#myface
-{
+.text-apropos {
+	display:inline-block;
+}
+
+.show-details {
+	margin-top: 15px;
+	color: #1F6464;
+	border: 1px solid #1F6464;
+	/*text-decoration:*/
+}
+
+.show-details:hover, .show-details:active {
+	border: 1px solid #1F6464;
+
+}
+
+.hidden-xs + .show-details::after, .collapse + .show-details::after {
+    content:'En savoir plus »';
+}
+.collapse.in+a.btn.show-details::after {
+    content:'Cacher «';
+
+}
+
+#myface {
 	height: 200px;
 	max-width: auto;
 	margin-top: 100px;
@@ -308,11 +330,6 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	color: #4e4d4d;
 }
 
-#competences
-{
-	border-top: 5px dashed #5ba5af;
-}
-
 .comp-item, .projet-item,#cv
 {
 	border-radius: 10px;
@@ -320,8 +337,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	margin: 10px;
 }
 
-#cv
-{
+#cv {
 	height: 50px;
 	padding: 15px;
 	font-weight: bold;
@@ -332,14 +348,12 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	font-size: 1em;
 }
 
-#cv:hover
-{
+#cv:hover {
 	background-color: #227580;
 	color: #fff;
 }
 
-#projets,#interets
-{
+#projets,#interets {
 	background-color: #5ba5af;
 }
 
@@ -357,15 +371,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	line-height: normal;
 }
 
-
-#interets
-{
-	border-top: 5px dashed #fff;
-	padding-bottom: 300px;
-}
-
-#interets .interet-item
-{
+#interets .interet-item {
 	background-color: #fff;
 	margin-bottom: 50px;
 	border-radius: 3px;
@@ -374,10 +380,87 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	color: #227580;
 }
 
+/*////// NAVBAR COLOR CHANGE*/
+#navbar .end-of-page {
+	background-color: #530000;
+}
+
+#navbar .end-of-page>li>a {
+	background-color: #530000;
+	color: #fff ;
+}
+#navbar .end-of-page>li>a:hover, #navbar .end-of-page>li.active>a, #navbar .end-of-page>li>a:active {
+	color: #fff ;
+	background-color: #A73434;
+}
+
+#seperator,#contact {
+	height: 800px;
+}
+
+#seperator {
+	display: block;
+	float: left;
+}
+
+#contact {
+	background-color: #000;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: -5;
+	width: 100%;
+
+	background-color: #A73434;
+	margin-bottom: 0px;
+	padding-top: 25%;
+}
+
+#contact .col-contact {
+	text-align: justify;
+	cursor: default;
+	width: 220px;
+	margin: auto;
+}
+
+#contact .img-contact, #contact .contact-item {
+	width: 200px;
+	height: 200px;
+	cursor:pointer;
+}
+
+#contact .contact-item {
+	margin: auto;
+
+	background: url("../img/mail-white.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+
+}
+
+#contact a {
+	color: #959595;
+}
+
+footer .credit {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+/*//////////////////////////////*/
 /* media queries des sections */
 
 @media (min-width: 768px){
-	.frise:after{
+
+	.frise:after {
 		content: "";
 		display: block;
 		width: 100%;
@@ -388,7 +471,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 		z-index: 0;
 	}
 
-	.projet-item{
+	.projet-item {
 		-webkit-transition: all .2s ease-in-out;
 		-moz-transition: all .2s ease-in-out;
 		-ms-transition: all .2s ease-in-out;
@@ -399,25 +482,25 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 	}
 
 
-	.projet-item:hover{
+	.projet-item:hover {
 		border-width:0px;
 	}
 
-	#contact-link {
-		display: none;
+	.section, #contact {
+		border-style: none solid;
+		border-image: none;
+		border-width: 0em 4em 0em;
+		border-color: #FFF;
 	}
 
-	@-moz-document url-prefix() {
-		#contact-link {
-			display: block;
-		}
+	#contact {
+		margin-bottom: 20px;
 	}
 }
 
 
 @media (max-width: 768px){
-	
-	/*Vraiment falloir que je passe ce code en sass*/
+
 	.frise-item
 	{
 		border:1px solid;
@@ -471,83 +554,8 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link
 		line-height: normal;
 	}
 
-}
+	#contact .col-contact {
+		padding-top: 300px;
+	}
 
-#seperator,#contact
-{
-	height: 360px;
-}
-
-#seperator {
-	display: block;
-	float: left;
-}
-
-#contact
-{
-	background-color: #000;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	z-index: -5;
-	width: 100%;
-}
-
-#contact .col-contact
-{
-	text-align: center;
-	width: 300px;
-	height: 200px;
-	margin: auto;
-}
-
-#contact .img-contact, #contact .contact-item 
-{
-	width: 200px;
-	height: 200px;
-}
-
-#contact .contact-item
-{
-
-	background: url("../img/mail-white.png");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-origin: border-box;
-	
-	border:100px dashed rgba(0, 0, 0, 0.7);
-
-	-webkit-transition: 0.5s ease;
-	-moz-transition: 0.5s ease;
-	-ms-transition: 0.5s ease;
-	-o-transition: 0.5s ease;
-	transition: 0.5s ease;
-
-}
-
-#contact .contact-item:hover
-{
-	border: 1px dashed rgba(0,0,0,7);
-}
-
-#contact a
-{
-	color: #959595;
-}
-
-
-.contact-item
-{
-	margin: auto;
-}
-
-
-footer .credit
-{
-	position: absolute;
-	/*bottom: -100px;*/
-	bottom: 10px;
-	right: 10px;
-	color: #959595;
-	margin:0;
 }

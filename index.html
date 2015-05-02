@@ -51,7 +51,7 @@
 							--><li><a href="#competences">Compétences</a></li><!--
 							--><li><a href="#projets" >Projets</a></li><!--
 							--><li><a href="#interets" >Intérêts</a></li><!--
-							--><li><a href="#contacter">Contact</a></li>
+							--><li id="li_contact"><a href="#contacter">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -61,9 +61,23 @@
 			<div class="row ">
 				<div class="col-md-6 col-md-offset-2">
 					<h2 class="text-center section-titre">À mon propos</h2>
-					<p class="text-justify text-apropos lead">Ce site à pour but de me présenter à vous de manière à ce que les grandes lignes de mes études et de mes compétences soient connues. Vous pouvez aussi, si vous le souhaitez utiliser le lien de contact en bas de page pour faire plus ample connaissance.<br/>
-					Je suis actuellement en 2<sup>e</sup> année de Master Informatique et spécialisé dans l'ingéniérie logicielle. J'ai, durant ma scolarité pu participer à un panel assez large de projets qui m'ont conforté dans le choix de la conception logicielle.
-					</p>
+					<div class="text-justify text-apropos lead">
+						Ce site à pour but de me présenter à vous de manière à ce que les grandes lignes de mes études
+						et de mes compétences soient connues.
+						Vous pouvez aussi, si vous le souhaitez utiliser le lien de contact en bas de page
+						pour faire plus ample connaissance avec moi.
+
+						<div id="viewdetails" class="hidden-xs" >
+							Je suis actuellement en 2<sup>e</sup> année de Master Informatique et spécialisé dans l'ingéniérie logicielle.
+							J'ai, durant ma scolarité pu participer à un panel assez large de projets qui m'ont conforté dans le choix
+							de la conception logicielle.
+						</div>
+						<a class="btn btn-link show-details visible-xs"
+							data-toggle="collapse"
+							data-target="#viewdetails"
+							aria-expanded="false"
+							data-parent=".text-apropos"></a>
+					</div>
 				</div>
 				<div class="hidden-xs col-md-2 col-md-offset-1">
 					<img src="img/redbox2.jpg" id="myface" class="img-responsive">
@@ -99,12 +113,16 @@
 						</div>
 					</div>
 					<div class="row">
-						<p class="text-justify text-parcours">Très intéressé par le fonctionnement du monde qui nous entoure, je me suis naturellement tourné vers un Baccalauréat scientifique.Mon Master en ingéniérie logicielle viens compléter ma formation universiatire pour que je puisse m'appliquer à concevoir des applicatoins de plus en plus ambitieuses.</p>
+						<p class="text-justify text-parcours">Très intéressé par le fonctionnement du monde qui nous entoure,
+							je me suis naturellement tourné vers un Baccalauréat scientifique.
+							Mon Master en ingéniérie logicielle viens compléter ma formation universiatire pour que je puisse m'appliquer
+							à concevoir des applicatoins de plus en plus ambitieuses.
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-
+		<div class="fake-border"></div>
 		<div class="container-fluid section"  id="competences">
 			<div class="row">
 				<div class="col-sm-12 col-md-10 col-md-offset-1">
@@ -139,13 +157,13 @@
 					<div class="row">
 						<div class="col-cv">
 							<a id="cv" href="res/BEDJABOANA-Ahmad_CV.pdf" target="_blank" class="btn btn-default">Voir mon CV</a>
-						
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
+		<div class="fake-border"></div>
 		<div class="container-fluid section" id="projets">
 			<div class="row">
 				<div class="col-sm-12 col-md-10 col-md-offset-1">
@@ -181,7 +199,7 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="fake-border"></div>
 		<div class="container-fluid section" id="interets">
 			<div class="row ">
 				<div class="col-md-12">
@@ -199,13 +217,13 @@
 						<div class="col-int col-md-6 col-md-offset-3">
 							<div class="interet-item">Les nouvelles technologies dans leur ensemble attirent mon attention</div>
 						</div>
-						
+
 
 					</div>
 				</div>
 			</div>
 		</div>
-	
+
 		<footer id="contacter">
 			<div id="seperator">&nbsp;</div>
 			<section id="contact">
@@ -220,8 +238,8 @@
 				</div>
 			</section>
 
-			
-		</footer>	
+
+		</footer>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
