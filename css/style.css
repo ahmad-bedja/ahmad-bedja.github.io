@@ -157,7 +157,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 
 	background-image: none;
 	box-shadow: none;
-	padding: 1em;
+	padding: 0.5em;
 }
 
 #navbar .nav>li>a:hover, #navbar .nav>li>a:focus, #navbar .nav>li.active>a {
@@ -198,6 +198,11 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 
 	#navbar {
 		background-color: #5ba5af;
+	}
+
+
+	#navbar .nav-main li > a {
+		padding: 1em;
 	}
 
 	#navbar .nav>li>a:hover, #navbar .nav>li>a:focus, #navbar  .nav>li.active>a {
@@ -412,6 +417,11 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 	cursor: default;
 	width: 220px;
 	margin: auto;
+
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	bottom: 20%;
 }
 
 #contact .img-contact, #contact .contact-item {
@@ -527,11 +537,6 @@ footer .credit {
 	.col-comp
 	{
 		text-align: center;
-	}
-
-
-	#contact .col-contact {
-		padding-top: 300px;
 	}
 
 }
