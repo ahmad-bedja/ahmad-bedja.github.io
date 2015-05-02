@@ -1,18 +1,15 @@
 
 
 /* ==========================================================================
-   Author's custom styles
+   Ahmad's custom styles
    ========================================================================== */
-/*body {position: relative;}*/
 
-html
-{
+html {
 	position: relative;
 	min-height: 100%;
 }
 
-body
-{
+body {
 	margin-bottom: 60px;
 	font-size: 1.6em;
 	background-color: #fff;
@@ -96,8 +93,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 /***************** NAVBAR
 ******************/
 
-#navbar
-{
+#navbar {
 	margin-top: 40px;
 	margin-bottom: 0;
 
@@ -117,8 +113,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 }
 
 
-#navbar .navbar-header
-{
+#navbar .navbar-header {
 	margin-right: 0;
 }
 
@@ -130,12 +125,10 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 	border-radius: 0;
 }
 
-#navbar .navbar-toggle:hover, #navbar .navbar-toggle:focus
-{
+#navbar .navbar-toggle:hover, #navbar .navbar-toggle:focus {
 	background-color: transparent;
 }
-#navbar .navbar-toggle:active
-{
+#navbar .navbar-toggle:active {
 	background-color: #ddd;
 }
 
@@ -155,8 +148,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 
 }
 
-.nav-main li
-{
+.nav-main li {
 	text-transform: uppercase;
 }
 
@@ -216,16 +208,12 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////*/
-.section, #contact
-{
+
+.section, #contact {
 	padding:40px;
 	padding-top: 60px;
 	min-height: 600px;
-
 }
 
 .fake-border {
@@ -252,10 +240,9 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 }
 
 .show-details {
-	margin-top: 15px;
+	margin: 15px auto;
 	color: #1F6464;
 	border: 1px solid #1F6464;
-	/*text-decoration:*/
 }
 
 .show-details:hover, .show-details:active {
@@ -266,9 +253,13 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 .hidden-xs + .show-details::after, .collapse + .show-details::after {
     content:'En savoir plus »';
 }
+
 .collapse.in+a.btn.show-details::after {
     content:'Cacher «';
+}
 
+.collapsing+a.btn.show-details::after {
+    content:'Cacher «';
 }
 
 #myface {
@@ -279,8 +270,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 
 }
 
-#parcours, #competences
-{
+#parcours, #competences {
 	background-color: #eee;
 }
 
@@ -393,6 +383,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 	color: #fff ;
 	background-color: #A73434;
 }
+/*//////////////////////////////*/
 
 #seperator,#contact {
 	height: 800px;
@@ -501,58 +492,43 @@ footer .credit {
 
 @media (max-width: 768px){
 
+	.section {
+		min-height: auto;
+	}
+	.comp-item, .projet-item, .frise-item {
+		height: auto;
+		padding: 20px;
+		margin: 2px;
+		line-height: normal;
+	}
+
 	.frise-item
 	{
-		border:1px solid;
+		border-radius: 3px;
+		margin:0;
 		position: relative;
-		margin: auto;
+		border:1px solid;
+		line-height: normal;
+		padding: 10px;
 	}
 
 	.col-frise
 	{
 		float: none;
+		margin: 10px 0;
 	}
 
-	.col-frise:nth-child(1) .frise-item
-	{
-		z-index: 1;
-		top: 375px;
-	}
-	.col-frise:nth-child(2) .frise-item
-	{
-		z-index: 2;
-		top:30px;
-
-	}
-	.col-frise:nth-child(3) .frise-item
-	{
-		z-index: 3;
-		top:-305px;
-
-	}
-	.col-frise:nth-child(4) .frise-item
-	{
-		z-index: 4;
-		top:-650px;
-
-	}
 
 	#parcours p.text-parcours
 	{
-		margin-top: -300px;
+		margin: 10px auto;
 	}
 
 	.col-comp
 	{
 		text-align: center;
 	}
-	.comp-item, .projet-item
-	{
-		height: auto;
-		padding: 20px;
-		margin: 2px;
-		line-height: normal;
-	}
+
 
 	#contact .col-contact {
 		padding-top: 300px;
