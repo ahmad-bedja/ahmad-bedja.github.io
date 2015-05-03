@@ -270,9 +270,8 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 #myface {
 	height: 200px;
 	max-width: auto;
-	margin-top: 100px;
+	margin: 20px auto;
 	border-radius: 5px;
-
 }
 
 #parcours, #competences {
