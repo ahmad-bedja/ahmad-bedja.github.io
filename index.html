@@ -1,18 +1,252 @@
-<!doctype html>
-<title>Site Maintenance</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:ahmad.bedjaboana@outlook.fr">contact me</a>, otherwise I&rsquo;ll be back online shortly!</p>
-        <p>&mdash; Ahmad</p>
+    <meta name="description" content="Portfolio de bedja boana ahmad conception logicielle et développement web">
+
+    <title>Portfolio - Ahmad BEDJA BOANA Software and web developer</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
+
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header id="header">
+      <div class="container-fluid container-header greybar">
+        <div class="topbar wrapper ">
+          <h2 class="nomprenom">Ahmad BEDJA BOANA</h2>
+        </div>
+        <div class="topbar wrapper ">
+          <h2 class="profession pull-right">// Java // Web<br/><span class="upper">développeur</span></h2>
+        </div>
+      </div>
+      <div id="navbar" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse nav-main">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#apropos">A propos</a></li><!--
+              --><li><a href="#parcours">Parcours</a></li><!--
+              --><li><a href="#competences">Compétences</a></li><!--
+              --><li><a href="#projets" >Projets</a></li><!--
+              --><li><a href="#interets" >Intérêts</a></li><!--
+              --><li id="li_contact"><a href="#contacter">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid section" id="apropos">
+      <div class="row ">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h2 class="text-center section-titre">À mon propos</h2>
+          <div class="text-justify text-apropos lead">
+            Ce site à pour but de me présenter à vous de manière à ce que les grandes lignes de mes études
+            et de mes compétences soient connues.
+            Vous pouvez aussi, si vous le souhaitez utiliser le lien de contact en bas de page
+            pour faire plus ample connaissance avec moi.
+
+            <div id="viewdetails" class="hidden-xs" >
+              Je suis actuellement en 2<sup>e</sup> année de Master Informatique et spécialisé dans l'ingéniérie logicielle.
+              J'ai, durant ma scolarité pu participer à un panel assez large de projets qui m'ont conforté dans le choix
+              de la conception logicielle.
+            </div>
+            <a class="btn btn-link show-details visible-xs"
+              data-toggle="collapse"
+              data-target="#viewdetails"
+              aria-expanded="false"
+              data-parent=".text-apropos"></a>
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-4 col-sm-offset-4">
+          <img src="img/redbox2.jpg" id="myface" class="img-responsive">
+        </div>
+      </div>
     </div>
-</article>
+
+    <div class="container-fluid section"  id="parcours">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="text-center section-titre">Parcours</h2>
+
+          <div class="row frise">
+            <div class="col-frise col-xs-12 col-xs-offset-0 col-sm-3 col-sm-offset-0">
+              <div class="frise-item">
+                <div class="frise-item-content">Bac Scientifique <span class="frise-item-lieu">Lycée Albert Camus, Nîmes</span></div>
+              </div>
+            </div>
+            <div class="col-frise col-xs-12 col-xs-offset-0 col-sm-3 col-sm-offset-0">
+              <div class="frise-item">
+                <div class="frise-item-content">DUT Informatique<span class="frise-item-lieu">IUT de Montpellier</span></div>
+              </div>
+            </div>
+            <div class="col-frise col-xs-12 col-xs-offset-0 col-sm-3 col-sm-offset-0">
+              <div class="frise-item">
+                <div class="frise-item-content">Licence Informatique<span class="frise-item-lieu">Université de Montpellier 2</span></div>
+              </div>
+            </div>
+            <div class="col-frise col-xs-12 col-xs-offset-0 col-sm-3 col-sm-offset-0">
+              <div class="frise-item">
+                <div class="frise-item-content">Master AIGLE<span class="frise-item-lieu">Université de Montpellier 2</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="text-justify text-parcours">Très intéressé par le fonctionnement du monde qui nous entoure,
+                je me suis naturellement tourné vers un Baccalauréat scientifique.
+                Mon Master en ingéniérie logicielle viens compléter ma formation universiatire pour que je puisse m'appliquer
+                à concevoir des applications de plus en plus ambitieuses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fake-border"></div>
+    <div class="container-fluid section"  id="competences">
+      <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+          <h2 class="text-center section-titre">Compétences</h2>
+          <div class="row row-comp text-center">
+            <div class="col-comp col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-xs-offset-3">
+              <div class="comp-item">
+                <span class="comp-item-content">Symfony 2</span>
+              </div>
+            </div>
+            <div class="col-comp col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-xs-offset-3">
+              <div class="comp-item">
+                <span class="comp-item-content java">JAVA</span>
+              </div>
+            </div>
+            <div class="col-comp col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-xs-offset-3">
+              <div class="comp-item">
+                <span class="comp-item-content">Javascript</span>
+              </div>
+            </div>
+            <div class="col-comp col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-xs-offset-3">
+              <div class="comp-item">
+                <span class="comp-item-content">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <p class="text-justify">Je développe principalement en Java et PHP mais tout au long de ma formation j'ai pu coder dans une multitude de langages.
+            </p>
+            <p>Voici aussi une liste non exhastive de technologies que j'ai abordées ou auxquelles je suis en train de me former : NodeJS, Android, Hadoop MapReduce, ... </p>
+          </div>
+          <div class="row">
+            <div class="col-cv">
+              <a id="cv" href="res/BEDJABOANA-Ahmad_CV.pdf" target="_blank" class="btn btn-default">Voir mon CV</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fake-border"></div>
+    <div class="container-fluid section" id="projets">
+      <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+          <h2 class="text-center section-titre">Projets</h2>
+          <div class="row row-projets">
+            <div class="col-projet col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 ">
+              <a href="http://friendly-remindr.appspot.com">
+              <div class="projet-item">
+                <span class="projet-item-content">Un langage exotique <br> Golang</span>
+              </div>
+              </a>
+            </div>
+            <div class="col-projet col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 ">
+              <a href="http://pierremalmassari.fr/themeynbook/">
+              <div class="projet-item">
+                <div class="projet-item-content">Un réseau social pour nous lier <br> Meynbook</div>
+              </div>
+              </a>
+            </div>
+            <div class="col-projet col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 ">
+              <a href="http://grammarware.github.io/sattose/slides/HuchardABCCFLNPSV.pdf">
+              <div class="projet-item">
+                <div class="projet-item-content item-meta">Rénovation logicielle grace aux algorithmes métaheuristiques</div>
+              </div>
+              </a>
+            </div>
+            <div class="col-projet col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 ">
+              <div class="projet-item">
+                <div class="projet-item-content item-risa">Traitement d'images astronomiques <br> R.I.S.A</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fake-border"></div>
+    <div class="container-fluid section" id="interets">
+      <div class="row ">
+        <div class="col-md-12">
+          <h2 class="text-center section-titre">Intérêts</h2>
+          <div class="row row-interets">
+            <div class="col-int col-md-6 col-md-offset-3">
+              <div class="interet-item">Je fais pas mal de sport (Taek Won Do entre autres)</div>
+            </div>
+            <div class="col-int col-md-6 col-md-offset-3">
+              <div class="interet-item">Un peu d'engagement associatif me permet de decompresser</div>
+            </div>
+            <div class="col-int col-md-6 col-md-offset-3">
+              <div class="interet-item">J'ai toujours un livre en cours de lecture</div>
+            </div>
+            <div class="col-int col-md-6 col-md-offset-3">
+              <div class="interet-item">Les nouvelles technologies dans leur ensemble attirent mon attention</div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="contacter">
+      <div id="seperator">&nbsp;</div>
+      <section id="contact">
+          <div id="colcon" class="col-contact">
+            <a href="mailto:ahmad.bedjaboana@outlook.fr" class="img-contact">
+              <div class="contact-item"></div>
+            </a>
+            <a id="contact-link" href="mailto:ahmad.bedjaboana@outlook.fr">ahmad.bedjaboana@outlook.fr</a>
+          </div>
+        <div class="text-right text-muted credit">
+          <p>design &amp; code, by Ahmad BEDJA&nbsp;BOANA with ❤&nbsp;</p>
+        </div>
+      </section>
+
+
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
