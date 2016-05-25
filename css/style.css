@@ -365,6 +365,10 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 	line-height: normal;
 }
 
+#interets {
+	transition: 0.2s ease;
+}
+
 #interets .interet-item {
 	background-color: #fff;
 	margin-bottom: 50px;
@@ -374,7 +378,7 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 	color: #227580;
 }
 
-/*////// NAVBAR COLOR CHANGE*/
+/*////// END PAGE COLOR CHANGE*/
 #navbar .end-of-page {
 	background-color: #530000;
 }
@@ -387,6 +391,11 @@ a, .projet-item, .frise-item,#apropos,#cv,#contact-link {
 	color: #fff ;
 	background-color: #A73434;
 }
+
+#interets.end-of-page {
+	background-color: #A73434;
+}
+
 /*//////////////////////////////*/
 
 #seperator,#contact {

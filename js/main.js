@@ -11,7 +11,7 @@ $(document).ready(function() {
 	// });
 
 
-	// NAVBAR Affix
+	
 	$('#navbar').affix({
         offset: {
             top: $('.container-header').height()+parseInt($('#navbar').css('margin-top')+10),
@@ -24,14 +24,13 @@ $(document).ready(function() {
 		$(".section:first-of-type").css({"margin-top":"0","transition":"none"});
 	});
 
+	//ensavoirplus mobile
 	$(".show-details").click(function(){
 		$details = $("#viewdetails");
 		$details.removeClass("hidden-xs");
 		$details.collapse({
             toggle: true
         });
-
-
 	});
 
 
@@ -52,20 +51,25 @@ $(document).ready(function() {
 		}, 300);
 	});
 
-	//cacher la navbar quand un item est selectioné (mode mobile)
+
+	//refermer la navbar quand un item est selectioné (mode mobile)
 	$(document).on('click','.navbar-collapse.in',function(e) {
 	    if( $(e.target).is('a') ) {
 	        $(this).collapse('hide');
 	    }
 	});
 
+
 	$('body').on('activate.bs.scrollspy', function (ev) {
-		// console.log($(ev.target).attr('id'));
+		
+		//changements de couleurs en bas de page
+		$elems = $('#navbar .navbar-nav, #navbar .navbar-header, #interets');
+
 		if($(ev.target).attr('id') === 'li_contact'){
-			$('#navbar .navbar-nav, #navbar .navbar-header').addClass('end-of-page');
+			$elems.addClass('end-of-page');
 		}else {
 			if(!$('#li_contact').hasClass('active')){
-				$('#navbar .navbar-nav, #navbar .navbar-header').removeClass('end-of-page');
+				$elems.removeClass('end-of-page');
 			}
 		}
 
